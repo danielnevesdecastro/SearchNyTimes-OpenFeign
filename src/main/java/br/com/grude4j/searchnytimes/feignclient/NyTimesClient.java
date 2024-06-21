@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @FeignClient(
             name = "nytimes",
-            url = "${nytimes.url}",
+            url = "https://api.nytimes.com/svc/mostpopular/v2",
             configuration = NyTimesConfig.class
 )
 public interface NyTimesClient {
